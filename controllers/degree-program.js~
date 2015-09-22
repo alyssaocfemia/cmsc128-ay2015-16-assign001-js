@@ -25,9 +25,9 @@ exports.findOne = function (req, res, next) {
 exports.insert = function (req, res, next) {
 	db.query("INSERT INTO degree(degree_code,description) VALUES (?,?)", [req.body.code,req.body.name], function (err, rows) {
 		if(err) return(err);
-		db.query("SELECT * FROM degree WHERE total_units='"+req.params.units+"' AND degree_code='"+req.params.code+"and  description='"+req.params.name+"'", function (err, rows) {
+		db.query("SELECT * FROM degree WHERE total_units='"+req.params.units+"', degree_code='"+req.params.code+"and  description='"+req.params.name+"'", function (err, rows) {
 		if(err) return(err);
-		res.send(rows[0]);
+		res.send(rows);
 	});
 	
 });

@@ -4,7 +4,7 @@
   "description": "ERROR: No README data found!",
   "main": "index.js",
   "directories": {
-    "example": "example"
+    "test": "test"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,14 +12,14 @@
   "author": "",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "express": "~4.13.3",
-    "mysql": "~2.9.0",
     "body-parser": "~1.13.3",
-    "method-override": "~2.3.5",
+    "express": "^4.13.3",
     "git": "~0.1.5",
-    "supertest": "~1.1.0",
+    "method-override": "~2.3.5",
+    "mysql": "~2.9.0",
     "should": "~7.1.0",
-    "should-http": "0.0.4"
+    "should-http": "0.0.4",
+    "supertest": "~1.1.0"
   },
   "devDependencies": {},
   "repository": {
